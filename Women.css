@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+*{
+    margin: 0;
+   overflow-x: hidden;  
+   font-family: 'Poppins', sans-serif;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+    margin: 0px 180px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    background: #fff;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 200px;
+    line-height: 100px;
+    background: linear-gradient(rgba(241, 149, 149, 0.6),transparent);
+    z-index: 100;
+}
+.nav-logo p {
+    font-family: "Monoton", sans-serif;
+    text-decoration: underline;
+    color: rgb(252, 137, 156);
+    font-size: 25px;
+    font-weight: 600;
+}
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu ul li{
+    list-style-type: none;
+}
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+.link:hover, .active{
+    border-bottom: 2px solid rgb(252, 137, 156);
+}
+.nav-button .btn{
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255,0.4);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.btn:hover{
+    background: rgb(255, 255, 255,0.3);
+}
+#registerBtn{
+    margin-left: 15px;
+}
+.btn.white-btn{
+    background: rgb(255, 255, 255,0.7);
+}
+.btn.white-btn:hover{
+    background: rgb(255, 255, 255,0.5);
+}
+.nav-menu-btn{
+    display: none;
+}
+
+.banner img{
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(149, 215, 235);
+}
+.bannerkid img{
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(149, 235, 199);
+}
+.women{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 10px;
+}
+.women h1{
+  font-size: 30px;
+  font-weight: 600;
+}
+.women ul{
+    display: flex;
+}
+.women ul li .Shop-More{
+    text-decoration: none;
+    color: black;
+}
+.Shop-More:hover{
+    border-bottom: 1px solid rgb(252, 137, 156);
+}
+.gallery{
+  width: calc(100% - 20px);
+}
+.fullpic{
+  display: flex;
+}
+.pic{
+    padding-right: 70px;
+}
+.pic1{
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+.pic1:hover{
+    border: 1px solid rgb(252, 137, 156);
+}
+.footerContainer{
+    width: 100%;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    background-color: white;
+    margin: 10px;
+}
+.socialIcons a i{
+    font-size: 30px;
+    color: rgb(252, 137, 156);
+}
+.footerNav img{
+  width: 300px;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1500px){
+  body{
+    margin: 0px 0px;
+}
+
+}
+
+
+@media only screen and (max-width: 950px) {
+    .nav-button{
+        display: none;
+    }
+    .nav-menu.responsive{
+        top: 100px;
+    }
+    .nav-menu{
+        position: absolute;
+        top: -900px;
+        display: flex;
+        justify-content: center;
+        background: rgba(245, 197, 197, 0.6);
+        width: 100%;
+        height: 100px;
+        backdrop-filter: blur(20px);
+        transition: .3s;
+    }
+    .nav-menu ul{
+        text-align: center;
+    }
+    .nav-menu-btn{
+        display: block;
+    }
+    .nav-menu-btn i{
+        font-size: 25px;
+        color: #fff;
+        padding: 10px;
+        background: rgb(255, 255, 255,0.2);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .nav-menu-btn i:hover{
+        background: rgb(255, 255, 255,0.24);
+    }
+  .pic1{
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+body{
+    margin: 0px 0px;
+}
+
+.fullpic{
+  display: flex;
+}
+}
+@media only screen and (max-width: 768px) {
+.fullpic{
+  display: flex;
+}
+
+}
+@media only screen and (max-width: 680px){
+  body{
+    margin: 0px 0px;
+}
+.pic1{
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+}
+.fullpic{
+  display: inline;
+}
+}
